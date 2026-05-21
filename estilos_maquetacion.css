@@ -1,6 +1,4 @@
-/* =========================================
-   VARIABLES
-========================================= */
+/* --- 1. VARIABLES --- */
 :root {
 
     --color-primario: #cb2591;
@@ -12,20 +10,14 @@
 
 }
 
-/* =========================================
-   RESET
-========================================= */
+/* RESET */
 *{
-
     margin:0;
     padding:0;
     box-sizing:border-box;
-
 }
 
-/* =========================================
-   BODY
-========================================= */
+/* BODY */
 body{
 
     font-family:'Poppins', sans-serif;
@@ -37,9 +29,7 @@ body{
 
 }
 
-/* =========================================
-   CONTENEDOR
-========================================= */
+/* CONTENEDOR */
 .container{
 
     width:90%;
@@ -48,9 +38,10 @@ body{
 
 }
 
-/* =========================================
+/* =========================
    HEADER
-========================================= */
+========================= */
+
 header{
 
     background:var(--blanco);
@@ -70,9 +61,7 @@ header .container{
 
 }
 
-/* =========================================
-   LOGO
-========================================= */
+/* LOGO */
 .logo img{
 
     height:55px;
@@ -81,9 +70,10 @@ header .container{
 
 }
 
-/* =========================================
+/* =========================
    MENÚ
-========================================= */
+========================= */
+
 .nav-menu{
 
     display:flex;
@@ -106,7 +96,6 @@ header .container{
     font-weight:500;
     padding:10px 0;
     transition:var(--transicion);
-
     display:inline-flex;
     align-items:center;
     gap:8px;
@@ -139,9 +128,10 @@ header .container{
 
 }
 
-/* =========================================
+/* =========================
    SUBMENÚ
-========================================= */
+========================= */
+
 .dropdown-content{
 
     position:absolute;
@@ -186,9 +176,7 @@ header .container{
 
 }
 
-/* =========================================
-   LOGIN
-========================================= */
+/* LOGIN */
 .btn-login{
 
     background-color:var(--color-primario);
@@ -206,99 +194,10 @@ header .container{
 
 }
 
-/* =========================================
-   BANNER SWIPER
-========================================= */
-.mainBanner{
-
-    width:100%;
-    height:450px;
-    position:relative;
-
-}
-
-/* Todo el slide clickeable */
-.banner-link{
-
-    text-decoration:none;
-    display:block;
-    width:100%;
-    height:100%;
-    position:relative;
-
-}
-
-.mainBanner .swiper-slide{
-
-    position:relative;
-    overflow:hidden;
-
-}
-
-.mainBanner img{
-
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
-    transition:transform 0.5s ease;
-
-}
-
-/* Zoom */
-.banner-link:hover img{
-
-    transform:scale(1.05);
-
-}
-
-/* Overlay */
-.banner-content{
-
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-
-    display:flex;
-    align-items:flex-end;
-    justify-content:flex-start;
-
-    padding:40px 5%;
-
-    background:linear-gradient(
-        to top,
-        rgba(0,0,0,0.7) 0%,
-        transparent 40%
-    );
-
-    box-sizing:border-box;
-
-}
-
-/* Caja texto */
-.text-box{
-
-    color:white;
-    max-width:80%;
-
-}
-
-.text-box h1{
-
-    font-size:2.5rem;
-    margin:0;
-    line-height:1.2;
-    font-weight:600;
-
-    text-shadow:2px 2px 10px rgba(0,0,0,0.5);
-
-}
-
-/* =========================================
+/* =========================
    SECCIONES
-========================================= */
+========================= */
+
 .seccion-info{
 
     padding:40px 0;
@@ -325,9 +224,7 @@ header .container{
 
 }
 
-/* =========================================
-   CUADROS
-========================================= */
+/* CUADROS */
 .cuadro{
 
     background:var(--blanco);
@@ -344,6 +241,7 @@ header .container{
 
 }
 
+/* TAMAÑOS */
 .cuadro-grande{
 
     flex:1 1 calc(50% - 20px);
@@ -359,9 +257,7 @@ header .container{
 
 }
 
-/* =========================================
-   IMÁGENES
-========================================= */
+/* IMÁGENES */
 .imagen-placeholder{
 
     width:100%;
@@ -380,9 +276,7 @@ header .container{
 
 }
 
-/* =========================================
-   BOTÓN VER MÁS
-========================================= */
+/* BOTÓN VER MÁS */
 .leer-mas{
 
     display:inline-block;
@@ -394,9 +288,7 @@ header .container{
 
 }
 
-/* =========================================
-   MEDIA
-========================================= */
+/* MEDIA */
 .media-container{
 
     width:100%;
@@ -428,9 +320,10 @@ header .container{
 
 }
 
-/* =========================================
+/* =========================
    FOOTER
-========================================= */
+========================= */
+
 footer{
 
     background:#111;
@@ -503,9 +396,10 @@ footer{
 
 }
 
-/* =========================================
+/* =========================
    REDES SOCIALES
-========================================= */
+========================= */
+
 .redes-sociales{
 
     display:flex;
@@ -521,7 +415,6 @@ footer{
     text-decoration:none;
     font-size:1rem;
     transition:0.3s;
-
     display:flex;
     align-items:center;
     gap:10px;
@@ -535,27 +428,22 @@ footer{
 
 }
 
-/* =========================================
+/* =========================
    BOTÓN WHATSAPP
-========================================= */
+========================= */
+
 .btn-whatsapp{
 
     display:inline-flex;
     align-items:center;
     gap:10px;
-
     margin-top:20px;
-
     background:#25D366;
     color:white !important;
-
     padding:12px 22px;
-
     border-radius:50px;
-
     text-decoration:none;
     font-weight:600;
-
     transition:0.3s;
 
 }
@@ -567,9 +455,10 @@ footer{
 
 }
 
-/* =========================================
+/* =========================
    MAPA
-========================================= */
+========================= */
+
 .mapa{
 
     margin-top:20px;
@@ -585,36 +474,27 @@ footer{
 
 }
 
-/* =========================================
-   BOTÓN FLOTANTE
-========================================= */
+/* =========================
+   WHATSAPP FLOTANTE
+========================= */
+
 .whatsapp-float{
 
     position:fixed;
-
     width:65px;
     height:65px;
-
     bottom:25px;
     right:25px;
-
     background:#25D366;
     color:white;
-
     border-radius:50%;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     font-size:32px;
-
     text-decoration:none;
-
     box-shadow:0 5px 20px rgba(0,0,0,0.3);
-
     z-index:9999;
-
     transition:0.3s;
 
 }
@@ -626,9 +506,10 @@ footer{
 
 }
 
-/* =========================================
+/* =========================
    RESPONSIVE
-========================================= */
+========================= */
+
 @media (max-width:850px){
 
     header .container{
@@ -686,31 +567,6 @@ footer{
     .footer-grid{
 
         grid-template-columns:1fr;
-
-    }
-
-}
-
-/* =========================================
-   RESPONSIVE BANNER
-========================================= */
-@media (max-width:768px){
-
-    .mainBanner{
-
-        height:300px;
-
-    }
-
-    .text-box h1{
-
-        font-size:1.5rem;
-
-    }
-
-    .banner-content{
-
-        padding:20px 5%;
 
     }
 
