@@ -1,4 +1,6 @@
-/* --- 1. VARIABLES --- */
+/* =========================
+   VARIABLES
+========================= */
 :root {
 
     --color-primario: #cb2591;
@@ -137,7 +139,7 @@ header .container{
     position:absolute;
     top:120%;
     left:-20px;
-    background:var(--blanco);
+    background:#fff;
     min-width:220px;
     padding:15px 0;
     list-style:none;
@@ -195,6 +197,100 @@ header .container{
 }
 
 /* =========================
+   BANNER SWIPER
+========================= */
+
+.mainBanner{
+
+    width:100%;
+    height:500px;
+    overflow:hidden;
+    position:relative;
+
+}
+
+.mainBanner .swiper-slide{
+
+    width:100%;
+    height:500px;
+    position:relative;
+
+}
+
+.banner-link{
+
+    width:100%;
+    height:100%;
+    display:block;
+    position:relative;
+
+}
+
+.mainBanner img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
+
+/* CAPA OSCURA */
+.banner-content{
+
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.1)
+    );
+
+    display:flex;
+    align-items:flex-end;
+    padding:40px;
+
+}
+
+/* TEXTO */
+.text-box{
+
+    color:white;
+
+}
+
+.text-box h1{
+
+    font-size:3rem;
+    font-weight:700;
+    text-shadow:0 3px 10px rgba(0,0,0,0.4);
+
+}
+
+/* FLECHAS */
+.swiper-button-next,
+.swiper-button-prev{
+
+    color:white !important;
+
+}
+
+/* PUNTOS */
+.swiper-pagination-bullet{
+
+    background:white !important;
+    opacity:0.7;
+
+}
+
+.swiper-pagination-bullet-active{
+
+    background:var(--color-primario) !important;
+    opacity:1;
+
+}
+
+/* =========================
    SECCIONES
 ========================= */
 
@@ -227,7 +323,7 @@ header .container{
 /* CUADROS */
 .cuadro{
 
-    background:var(--blanco);
+    background:#fff;
     border-radius:12px;
     padding:20px;
     box-shadow:0 4px 15px rgba(0,0,0,0.05);
@@ -261,7 +357,6 @@ header .container{
 .imagen-placeholder{
 
     width:100%;
-    height:auto;
     overflow:hidden;
     border-radius:8px;
     margin-bottom:15px;
@@ -271,7 +366,6 @@ header .container{
 .imagen-placeholder img{
 
     width:100%;
-    height:auto;
     display:block;
 
 }
@@ -470,6 +564,7 @@ footer{
 
 .mapa iframe{
 
+    width:100%;
     display:block;
 
 }
@@ -494,7 +589,7 @@ footer{
     font-size:32px;
     text-decoration:none;
     box-shadow:0 5px 20px rgba(0,0,0,0.3);
-    z-index:9999;
+    z-index:99999;
     transition:0.3s;
 
 }
@@ -567,6 +662,24 @@ footer{
     .footer-grid{
 
         grid-template-columns:1fr;
+
+    }
+
+    .mainBanner{
+
+        height:300px;
+
+    }
+
+    .mainBanner .swiper-slide{
+
+        height:300px;
+
+    }
+
+    .text-box h1{
+
+        font-size:1.8rem;
 
     }
 
